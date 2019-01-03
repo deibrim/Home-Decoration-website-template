@@ -183,6 +183,12 @@ body p {
   }
 }
 
+@media (max-width: 500px) {
+  .landing .container .float-right .landing-txt {
+    margin: 5em 4em 0 0;
+  }
+}
+
 .landing .container .float-right .landing-txt .content {
   margin: 10em 0 0 0em;
 }
@@ -192,6 +198,12 @@ body p {
   font-weight: 400;
   position: relative;
   margin-bottom: 0.4em;
+}
+
+@media (max-width: 500px) {
+  .landing .container .float-right .landing-txt .content h1 {
+    font-size: 3.5em;
+  }
 }
 
 .landing .container .float-right .landing-txt .content h1 span {

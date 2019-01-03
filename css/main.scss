@@ -159,6 +159,9 @@ body {
           margin: 10em 4em 0 0;
           transition: all 0.5s ease-in;
         }
+        @include smallScreen {
+          margin: 5em 4em 0 0;
+        }
         .content {
           margin: 10em 0 0 0em;
           h1 {
@@ -166,6 +169,9 @@ body {
             font-weight: 400;
             position: relative;
             margin-bottom: 0.4em;
+            @include smallScreen {
+              font-size: 3.5em;
+            }
             span {
               color: darken(map-get($colors, primary), 60%);
             }
