@@ -4,6 +4,7 @@ $colors: (
 );
 $tablet: 720px;
 $mobile: 550px;
+$smallScreen: 500px;
 @mixin tablet {
   @media (max-width: #{$tablet}) {
     @content;
@@ -11,6 +12,11 @@ $mobile: 550px;
 }
 @mixin mobile {
   @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+@mixin smallScreen {
+  @media (max-width: #{$smallScreen}) {
     @content;
   }
 }
@@ -177,7 +183,6 @@ body {
   }
 }
 // LANDING END
-
 // MAIN START
 .main {
   text-align: center;
@@ -295,7 +300,6 @@ body {
   }
 }
 // MAIN END
-
 // FOOTER
 footer {
   background-color: map-get($colors, secondary);
