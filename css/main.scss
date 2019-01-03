@@ -110,6 +110,10 @@ body {
       text-align: center;
       display: block;
       transition: 0.3s;
+      @include smallScreen {
+        font-size: 18px;
+        padding: 6px 8px 6px 32px;
+      }
     }
     .sidenav a:hover {
       color: #f1f1f1;
