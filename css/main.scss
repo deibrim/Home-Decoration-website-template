@@ -27,10 +27,11 @@ $smallScreen: 500px;
 // CUSTOM SCROLLBAR
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: darken(map-get($colors, primary), 60%);
+  background-color: #adff2f;
 }
 ::-webkit-scrollbar-thumb {
   background-color: map-get($colors, secondary);
+  border-radius: 10px;
 }
 html,
 body {
