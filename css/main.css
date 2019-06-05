@@ -15,7 +15,7 @@
 
 html,
 body {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: #fafafa;
@@ -219,7 +219,7 @@ body p {
 }
 
 .landing .container .float-right .landing-txt .content h1::before {
-  content: "Apply your own visual language";
+  content: 'Apply your own visual language';
   position: absolute;
   font-size: 0.25em;
   top: -1.5em;
@@ -395,16 +395,19 @@ footer {
   text-align: center;
 }
 
+footer p {
+  margin: 0;
+  padding: 10px;
+  color: gray;
+}
+
 footer h5,
 footer .fa {
   color: #ffffff;
   font-size: 1.5em;
   font-weight: 100;
-  margin-bottom: 1em;
+  margin: 0 0.5em 1em 0;
   text-transform: capitalize;
-}
-
-footer .fa {
   margin-right: 0.5em;
 }
 
@@ -444,24 +447,24 @@ footer .centering .newsletter input {
   }
 }
 
-footer .centering .newsletter input[type="email"] {
+footer .centering .newsletter input[type='email'] {
   background-color: #e6e6e6;
 }
 
-footer .centering .newsletter input[type="submit"] {
+footer .centering .newsletter input[type='submit'] {
   background-color: #ffffff;
   text-transform: capitalize;
 }
 
 @media (max-width: 550px) {
-  footer .centering .newsletter input[type="submit"] {
+  footer .centering .newsletter input[type='submit'] {
     margin-left: 0.6em;
     -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
   }
 }
 
-footer .centering .newsletter input[type="submit"]:hover {
+footer .centering .newsletter input[type='submit']:hover {
   color: #ffffff;
   background-color: #0c0c0c;
   border: 2px solid #ffffff;

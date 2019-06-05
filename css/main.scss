@@ -35,7 +35,7 @@ $smallScreen: 500px;
 }
 html,
 body {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: darken(map-get($colors, primary), 2%);
@@ -68,7 +68,7 @@ body {
 .landing {
   height: 100vh;
   width: 100vw;
-  background: url("../img/landing3.jpg");
+  background: url('../img/landing3.jpg');
   background-size: cover;
   background-position: center;
   margin-bottom: 4em;
@@ -182,7 +182,7 @@ body {
             }
           }
           h1::before {
-            content: "Apply your own visual language";
+            content: 'Apply your own visual language';
             position: absolute;
             font-size: 0.25em;
             top: -1.5em;
@@ -244,7 +244,7 @@ body {
     }
     .showcase {
       height: 500px;
-      background-image: url("../img/showcase.jpg");
+      background-image: url('../img/showcase.jpg');
       background-size: cover;
       background-position: center;
       display: flex;
@@ -315,16 +315,22 @@ body {
 footer {
   background-color: map-get($colors, secondary);
   text-align: center;
+
+  p {
+    margin: 0;
+    padding: 10px;
+    color: darken(map-get($colors, primary), 50);
+  }
   h5,
   .fa {
     color: map-get($colors, primary);
     font-size: 1.5em;
     font-weight: 100;
-    margin-bottom: 1em;
+    margin: 0 0.5em 1em 0;
     text-transform: capitalize;
+    margin-right: 0.5em;
   }
   .fa {
-    margin-right: 0.5em;
     &:hover {
       color: darken(map-get($colors, primary), 50);
     }
@@ -350,10 +356,10 @@ footer {
           transition: all 0.5s ease-in;
         }
       }
-      input[type="email"] {
+      input[type='email'] {
         background-color: darken(map-get($colors, primary), 10);
       }
-      input[type="submit"] {
+      input[type='submit'] {
         background-color: map-get($colors, primary);
         text-transform: capitalize;
         @include mobile {
